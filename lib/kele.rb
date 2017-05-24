@@ -1,8 +1,11 @@
 class Kele
     require 'httparty'
     require 'json'
+    require_relative 'roadmap'
     
     include HTTParty
+    include Roadmap
+    
     attr_reader :auth_token
     
     base_uri "https://www.bloc.io/api/v1"
@@ -43,6 +46,10 @@ class Kele
         get_me["current_enrollment"]["mentor_id"]
     end
     
+    def get_roadmap_id # convenience method
+        get_me["current_enrollment"]["roadmap_id"]
+    end
+    
     def get_mentor_availability(id = get_mentor_id) # return mentor availability for given mentor id. The default is the mentor id of the user
         headers = { 
             "Content-Type" => "application/json",
@@ -52,5 +59,6 @@ class Kele
         body_text = response.body
         JSON.parse(body_text)
     end
+    
     
 end
