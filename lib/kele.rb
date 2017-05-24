@@ -1,7 +1,9 @@
 class Kele
     require 'httparty'
+    require 'json'
+    
     include HTTParty
-    attr_reader :auth_token
+    attr_reader :auth_token, :response
     
     base_uri "https://www.bloc.io/api/v1"
     
@@ -9,8 +11,27 @@ class Kele
         @email = email
         @password = password
         body = { email: @email, password: @password }
-        response = self.class.post("/sessions", body: body)
+        
+        headers = {
+            'Content-Type' => 'application/json', 
+            'Accept' => 'application/json'
+        }
+
+        response = self.class.post("/sessions", 
+            :body => body.to_json,
+            :headers => headers )
+        @response = response
         @auth_token = response["auth_token"]
     end
+    
+    def get_me
+        headers = { 
+            "Content-Type" => "application/json",
+            "authorization" => @auth_token
+        }
+        response = self.class.get("/users/me", headers: headers)
+        body_text = response.body
+        JSON.parse(body_text)
+    end
+
 end
-        
