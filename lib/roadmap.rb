@@ -10,7 +10,6 @@ module Roadmap
         response = self.class.get("/roadmaps/#{id}", headers: headers)
         body_text = response.body
         @roadmap = JSON.parse(body_text)
-        @roadmap
     end
 
     def display_checkpoints(id = get_roadmap_id) # Lists all checkpoints, their name, id and section
