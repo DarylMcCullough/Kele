@@ -2,9 +2,11 @@ class Kele
     require 'httparty'
     require 'json'
     require_relative 'roadmap'
+    require_relative 'messages'
     
     include HTTParty
     include Roadmap
+    include Messages
     
     attr_reader :auth_token
     
@@ -39,7 +41,6 @@ class Kele
         body_text = response.body
         
         @my_info = JSON.parse(body_text) #save information for later
-        @my_info
     end
     
     def get_mentor_id # convenience method
