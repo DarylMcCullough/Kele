@@ -2,9 +2,11 @@ class Kele
     require 'httparty'
     require 'json'
     require_relative 'roadmap'
+    require_relative 'messages'
     
     include HTTParty
     include Roadmap
+    include Messages
     
     attr_reader :auth_token
     
