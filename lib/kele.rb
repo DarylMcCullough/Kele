@@ -39,7 +39,6 @@ class Kele
         body_text = response.body
         
         @my_info = JSON.parse(body_text) #save information for later
-        @my_info
     end
     
     def get_mentor_id # convenience method
