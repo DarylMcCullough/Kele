@@ -10,11 +10,11 @@ module Submission
         body = {
             "checkpoint_id" => checkpoint_id,
             "assignment_branch" => assignment_branch,
-            "assignment_commit_link" => assignment_commitment_link,
+            "assignment_commit_link" => assignment_commit_link,
             "comment" => comment,
             "enrollment_id" => enrollment_id
         }
 
-        response = self.class.post("/messages", headers: headers, body: body.to_json)
+        self.class.post("/messages", headers: headers, body: body.to_json)
     end
 end

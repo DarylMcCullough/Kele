@@ -3,10 +3,12 @@ class Kele
     require 'json'
     require_relative 'roadmap'
     require_relative 'messages'
+    require_relative 'submission'
     
     include HTTParty
     include Roadmap
     include Messages
+    include Submission
     
     attr_reader :auth_token
     
@@ -59,6 +61,10 @@ class Kele
         response = self.class.get("/mentors/#{id}/student_availability", headers: headers)
         body_text = response.body
         JSON.parse(body_text)
+    end
+    
+    def get_enrollment_id
+        get_me["current_enrollment"]["id"]
     end
     
     
