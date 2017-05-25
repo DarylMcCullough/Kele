@@ -1,5 +1,5 @@
 module Submission
-    def create_submission(checkpoint_id, assignment_branch, assignment_commit_link, comment)
+    def create_submission(checkpoint_id, assignment_branch, assignment_commit_link, comment, update_id = nil)
         enrollment_id = self.get_enrollment_id
         
         headers = {
@@ -14,7 +14,13 @@ module Submission
             "comment" => comment,
             "enrollment_id" => enrollment_id
         }
+        
+        url = "/checkpoint_submissions"
+        
+        if update_id
+            url = "#{url}/#{update_id}"
+        end
 
-        self.class.post("/messages", headers: headers, body: body.to_json)
+        self.class.post(url, headers: headers, body: body.to_json)
     end
 end
