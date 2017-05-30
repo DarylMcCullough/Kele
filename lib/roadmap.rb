@@ -35,5 +35,4 @@ module Roadmap
         JSON.parse(body_text)
     end
 
-
 end
