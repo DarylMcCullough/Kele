@@ -1,0 +1,74 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://www.bloc.io/api/v1/sessions
+    body:
+      encoding: UTF-8
+      string: '{"email":<EMAIL>,"password":<PASSWORD>}'
+    headers:
+      Content-Type:
+      - application/json
+      Accept:
+      - application/json
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Date:
+      - Tue, 30 May 2017 21:21:11 GMT
+      Connection:
+      - keep-alive
+      Strict-Transport-Security:
+      - max-age=31536000
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - '"080128daf03cf919d2d63598a2154518"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Set-Cookie:
+      - XSRF-TOKEN=xkkDW%2B1IwBkElRKT94s7gmxXY%2FNi2zliGedmC5YmNW0%3D; path=/; secure
+      - _BlocAlpha_session2=Y3pHbkMyRk43R2xiRGVURU1wRGlQakNaRDhEV0c1WVVOOGhnaVVVbG9tNHNTbmVxeFMyOVN1aW9tVGNMbzIwYW1BUGpkcWFVSk5xMnVOc2IvVVd4SGEvbkJYMFRkbTRrcEVlUmJidTBFUDdETmZMNmpzc1JrcXluS21UckczWThQeU1JRHZnaHFIYXFUNFlHa2J3Uis5SHhZV0ZNaCtxVFZHWnRvbDV3eXZSQ3ZMZEVRSWxuYUJhSnNVb0dGRndCdVc0WmRoeXVjU25ENkJFcS9ka1BrUT09LS1Wb2Rlc2g3SVFrbmc1NGFueTJiR1Z3PT0%3D--ac2fac3a3c0df028c67280ff70235ae8561eef5c;
+        domain=.bloc.io; path=/; secure; HttpOnly
+      - ahoy_track=true; path=/; secure
+      - ahoy_visit=c22b3368-1137-4e02-a7e7-32dde7068ab5; path=/; expires=Wed, 31 May
+        2017 01:21:11 -0000; secure
+      - ahoy_visitor=cfd5e27d-0400-48f4-addc-f8503d1199ca; path=/; expires=Thu, 30
+        May 2019 21:21:11 -0000; secure
+      X-Request-Id:
+      - 1fe7e70a-2c34-4704-99b6-cc4a30147ea5
+      X-Runtime:
+      - '0.140967'
+      Vary:
+      - Accept-Encoding
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '{"auth_token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhcGlfa2V5IjoiYTRlOWU0YjliYWZkNGMwMjgzMjM1YTc5ZjA5YzNkOTkiLCJ1c2VyX2lkIjoyMzU3NjU4LCJuYW1lIjoiRGFyeWwgTWNDdWxsb3VnaCJ9.PivbbWAQn-sGOkjSiXtVEzYab7d_FNZ91rhDHezB8J0","user":{"id":2357658,"email":"stevendaryl3016@yahoo.com","created_at":"2016-10-03T14:02:31.988-05:00","updated_at":"2017-05-30T16:15:05.340-05:00","facebook_id":"10209300503301643","first_name":"Daryl","last_name":"McCullough","role":"user","stripe_customer_id":"cus_9KiY0mY2Y4Dihg","twitter_handle":"dmccullough3016","skype_handle":null,"github_handle":"DarylMcCullough","time_zone":"Eastern
+        Time (US \u0026 Canada)","bio":"My training was in physics, but my work experience
+        has been in programming (in C++, Java, and Lisp). I am taking the Bloc Software
+        Developer track in order to bring my coding skills up to date in modern web
+        development tools and languages. Hopefully, this will lead to a new successful
+        phase in my career.\n\nI am probably about the oldest student that Bloc has
+        ever had--58. I am hoping that my training here leads to another 10 years
+        or so of satisfying work for me, before retiring.\n\nSome personal information:
+        I have four children, all adopted, of various ethnic background. They are
+        all nearing adulthood (the youngest is 18). I''ve lived in Ithaca, New York
+        for most of adult life, although I grew up in the South (in Rome, Georgia).","photo_file_name":"13690794_10208662758518422_299342847606852910_n.jpg","photo_content_type":"image/jpeg","photo_file_size":9056,"photo_updated_at":"2016-10-03T14:02:31.844-05:00","send_new_message_emails":true,"referred_by_id":null,"slug":"daryl-mccullough","os":"Windows","last_seen_at":"2017-05-30T16:15:16.979-05:00","private_profile":false,"google_plus_id":null,"linkedin":"https://www.linkedin.com/in/daryl-mccullough-99323023","quota":0,"old_first_visit_id":null,"selected_enrollment_chain_id":5436,"phone_num":"(607)
+        339-6019","title":null,"quota_limit":0,"dribbble_handle":null,"codecademy_handle":"designRunner00190","birthdate":"1958-02-16","gender":"Male","first_visit_id":null,"codewars_handle":"DarylMcCullough"}}'
+    http_version: 
+  recorded_at: Tue, 30 May 2017 21:21:11 GMT
+recorded_with: VCR 3.0.3

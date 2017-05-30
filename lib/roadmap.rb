@@ -7,7 +7,7 @@ module Roadmap
             "Content-Type" => "application/json",
             "authorization" => @auth_token
         }
-        response = self.class.get("/roadmaps/#{id}", headers: headers)
+        @response = self.class.get("/roadmaps/#{id}", headers: headers)
         body_text = response.body
         @roadmap = JSON.parse(body_text)
     end
@@ -30,7 +30,7 @@ module Roadmap
             "Content-Type" => "application/json",
             "authorization" => @auth_token
         }
-        response = self.class.get("/checkpoints/#{id}", headers: headers)
+        @response = self.class.get("/checkpoints/#{id}", headers: headers)
         body_text = response.body
         JSON.parse(body_text)
     end

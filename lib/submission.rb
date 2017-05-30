@@ -21,6 +21,6 @@ module Submission
             url = "#{url}/#{update_id}"
         end
 
-        self.class.post(url, headers: headers, body: body.to_json)
+        @response = self.class.post(url, headers: headers, body: body.to_json)
     end
 end

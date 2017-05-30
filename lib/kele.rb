@@ -10,7 +10,7 @@ class Kele
     include Messages
     include Submission
     
-    attr_reader :auth_token
+    attr_reader :auth_token, :response
     
     base_uri "https://www.bloc.io/api/v1"
     
@@ -24,10 +24,10 @@ class Kele
             'Accept' => 'application/json'
         }
 
-        response = self.class.post("/sessions", 
+        @response = self.class.post("/sessions", 
             :body => body.to_json, # since the Content-Type is json
             :headers => headers )
-        @auth_token = response["auth_token"]
+        @auth_token = @response["auth_token"]
         @my_info = nil
     end
     
@@ -39,7 +39,7 @@ class Kele
             "Content-Type" => "application/json",
             "authorization" => @auth_token
         }
-        response = self.class.get("/users/me", headers: headers)
+        @response = self.class.get("/users/me", headers: headers)
         body_text = response.body
         
         @my_info = JSON.parse(body_text) #save information for later
@@ -58,7 +58,7 @@ class Kele
             "Content-Type" => "application/json",
             "authorization" => @auth_token
         }
-        response = self.class.get("/mentors/#{id}/student_availability", headers: headers)
+        @response = self.class.get("/mentors/#{id}/student_availability", headers: headers)
         body_text = response.body
         JSON.parse(body_text)
     end
