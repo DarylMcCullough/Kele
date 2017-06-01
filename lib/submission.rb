@@ -19,8 +19,9 @@ module Submission
         
         if update_id
             url = "#{url}/#{update_id}"
+            @response = self.class.put(url, headers: headers, body: body.to_json)
+        else
+            @response = self.class.post(url, headers: headers, body: body.to_json)
         end
-
-        @response = self.class.post(url, headers: headers, body: body.to_json)
     end
 end
