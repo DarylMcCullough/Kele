@@ -1,0 +1,208 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://www.bloc.io/api/v1/sessions
+    body:
+      encoding: UTF-8
+      string: '{"email":<EMAIL>,"password":<PASSWORD>}'
+    headers:
+      Content-Type:
+      - application/json
+      Accept:
+      - application/json
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Date:
+      - Tue, 30 May 2017 20:53:41 GMT
+      Connection:
+      - keep-alive
+      Strict-Transport-Security:
+      - max-age=31536000
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - '"7fb8ad54ec8bca32c9d8811524786f61"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Set-Cookie:
+      - XSRF-TOKEN=5rvjwCrX2EbzIyELwEduPSwq17YyC8jW1wq%2B%2BwoUjJQ%3D; path=/; secure
+      - _BlocAlpha_session2=NDVadG8xZlVibjlHNnRXc2dDSzNmalYyTmh3amZFUXNpR29pN0hrQ2EwNGluaWN1RFZZbGk5S1RRTzRzRDZ0Um0yOWR3dTNLNDFqUHF3ZUlLRGhEWmliYndmY2ZsYlowYlhxaytFOFZ0NUNtTjI2VlBBQThCK3hFa1FCNlhMSVNYREhMZnJvdzBZaFVaMG1xejIzemtxZmo4UjV3Qkc3aDVWK2t5THdOWmJ3WGFqM1B1bkdKMzYyTDQ3RHpHSDVjRnJyZWtMdnpqc3JHU2ltQ2hkT0pZUT09LS1GKzBvUXVHTmdSUFBINWQzOEhNaVJnPT0%3D--e98d11b3f1f623fa7774fb6d79b62613a9c97f78;
+        domain=.bloc.io; path=/; secure; HttpOnly
+      - ahoy_track=true; path=/; secure
+      - ahoy_visit=7005b359-9481-45ef-93ed-571109445681; path=/; expires=Wed, 31 May
+        2017 00:53:41 -0000; secure
+      - ahoy_visitor=f415f078-ba03-4e61-b57b-6b6c72a37052; path=/; expires=Thu, 30
+        May 2019 20:53:41 -0000; secure
+      X-Request-Id:
+      - 04e138e8-aa2d-41ad-81a6-0d757e4af7d4
+      X-Runtime:
+      - '0.089677'
+      Vary:
+      - Accept-Encoding
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '{"auth_token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhcGlfa2V5IjoiYTRlOWU0YjliYWZkNGMwMjgzMjM1YTc5ZjA5YzNkOTkiLCJ1c2VyX2lkIjoyMzU3NjU4LCJuYW1lIjoiRGFyeWwgTWNDdWxsb3VnaCJ9.PivbbWAQn-sGOkjSiXtVEzYab7d_FNZ91rhDHezB8J0","user":{"id":2357658,"email":"stevendaryl3016@yahoo.com","created_at":"2016-10-03T13:02:31.988-06:00","updated_at":"2017-05-30T14:53:41.434-06:00","facebook_id":"10209300503301643","first_name":"Daryl","last_name":"McCullough","role":"user","stripe_customer_id":"cus_9KiY0mY2Y4Dihg","twitter_handle":"dmccullough3016","skype_handle":null,"github_handle":"DarylMcCullough","time_zone":"Eastern
+        Time (US \u0026 Canada)","bio":"My training was in physics, but my work experience
+        has been in programming (in C++, Java, and Lisp). I am taking the Bloc Software
+        Developer track in order to bring my coding skills up to date in modern web
+        development tools and languages. Hopefully, this will lead to a new successful
+        phase in my career.\n\nI am probably about the oldest student that Bloc has
+        ever had--58. I am hoping that my training here leads to another 10 years
+        or so of satisfying work for me, before retiring.\n\nSome personal information:
+        I have four children, all adopted, of various ethnic background. They are
+        all nearing adulthood (the youngest is 18). I''ve lived in Ithaca, New York
+        for most of adult life, although I grew up in the South (in Rome, Georgia).","photo_file_name":"13690794_10208662758518422_299342847606852910_n.jpg","photo_content_type":"image/jpeg","photo_file_size":9056,"photo_updated_at":"2016-10-03T13:02:31.844-06:00","send_new_message_emails":true,"referred_by_id":null,"slug":"daryl-mccullough","os":"Windows","last_seen_at":"2017-05-30T14:53:41.466-06:00","private_profile":false,"google_plus_id":null,"linkedin":"https://www.linkedin.com/in/daryl-mccullough-99323023","quota":0,"old_first_visit_id":null,"selected_enrollment_chain_id":5436,"phone_num":"(607)
+        339-6019","title":null,"quota_limit":0,"dribbble_handle":null,"codecademy_handle":"designRunner00190","birthdate":"1958-02-16","gender":"Male","first_visit_id":null,"codewars_handle":"DarylMcCullough"}}'
+    http_version: 
+  recorded_at: Tue, 30 May 2017 20:53:42 GMT
+- request:
+    method: get
+    uri: https://www.bloc.io/api/v1/users/me
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Content-Type:
+      - application/json
+      Authorization:
+      - eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhcGlfa2V5IjoiYTRlOWU0YjliYWZkNGMwMjgzMjM1YTc5ZjA5YzNkOTkiLCJ1c2VyX2lkIjoyMzU3NjU4LCJuYW1lIjoiRGFyeWwgTWNDdWxsb3VnaCJ9.PivbbWAQn-sGOkjSiXtVEzYab7d_FNZ91rhDHezB8J0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Date:
+      - Tue, 30 May 2017 20:53:42 GMT
+      Connection:
+      - keep-alive
+      Strict-Transport-Security:
+      - max-age=31536000
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - '"ada68b11837a38455c3dd0feec928f2b"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Set-Cookie:
+      - XSRF-TOKEN=YrxcV4Bi26%2FL%2B5qDONHOzWCnXPjx5kQKvJJtxnL0ggs%3D; path=/; secure
+      - _BlocAlpha_session2=YzdzREZBcHlCdmFFWWNnNk5hbk9kQnhOYTAvd3J2aUErOG96Z2Noa0FGd0QwMHJ0MHAvbnBSSyswMkxJdXE4UDlxdSttRzQ1Y0NvWDM2SElJSE9Ta2kwNXZaV2pLLytMVUJ2K0E5blZJMDFTWUZsbXk5cUNTYzhMeGRtTTA2TFZ3akYzaHQwWGcwOVl4Um54YVhqWTdpRlRzOHNPU3NQeU1mNER6TFY4dEFjeEtQZ0RvZjJFWTRCZ215c09MY2JkK3FhM3p6RnlYVmZXa3h6U3h3VUxhNUlDWnZEVENnYU5CeTZyVjY3cUtQVTlZejF1c295WlV3SEorQmsvK2NndHpjRUFDSUNGOVh5R05PRjl2L2xrQmpibStORWlMdFZXQ29qMVVLazFSMElGSHpIbkZmVlpPNGwreTgvdkJhbkktLWlJTFRYUXVQZVZlM2xDbkdPelJtR0E9PQ%3D%3D--9194fb1502eae5b0cf5af15a63c662ef9f4e2e05;
+        domain=.bloc.io; path=/; secure; HttpOnly
+      - ahoy_track=true; path=/; secure
+      - ahoy_visit=49cc30e8-cd9d-4025-a636-ad11eec54d6a; path=/; expires=Wed, 31 May
+        2017 00:53:42 -0000; secure
+      - ahoy_visitor=75f1e9f8-8e7b-4fb9-a989-31dda7182aab; path=/; expires=Thu, 30
+        May 2019 20:53:42 -0000; secure
+      X-Request-Id:
+      - 24eb5236-dd2b-4edc-9470-68c9b67f3b76
+      X-Runtime:
+      - '0.043750'
+      Vary:
+      - Accept-Encoding
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '{"id":2357658,"slug":"daryl-mccullough","name":"Daryl McCullough","email":"stevendaryl3016@yahoo.com","title":null,"first_name":"Daryl","last_name":"McCullough","facebook_id":"10209300503301643","url":"/users/daryl-mccullough","bio":"My
+        training was in physics, but my work experience has been in programming (in
+        C++, Java, and Lisp). I am taking the Bloc Software Developer track in order
+        to bring my coding skills up to date in modern web development tools and languages.
+        Hopefully, this will lead to a new successful phase in my career.\n\nI am
+        probably about the oldest student that Bloc has ever had--58. I am hoping
+        that my training here leads to another 10 years or so of satisfying work for
+        me, before retiring.\n\nSome personal information: I have four children, all
+        adopted, of various ethnic background. They are all nearing adulthood (the
+        youngest is 18). I''ve lived in Ithaca, New York for most of adult life, although
+        I grew up in the South (in Rome, Georgia).","course":{"id":62,"name":"Software
+        Developer Track","length":54,"kind":"software_dev_track","appointments_per_week":2},"current_enrollment":{"id":25610,"created_at":"2017-05-09T11:24:11.577Z","updated_at":"2017-05-25T21:07:44.024Z","cohort_id":null,"status":"active","mentor_id":623967,"deleted":false,"onboarded":true,"dropped_out_at":null,"birth_date":"2017-05-09T11:24:11.569Z","roadmap_id":38,"course_end_date":"2017-12-12T00:00:00.000Z","course_start_date":"2016-11-14T00:00:00.000Z","death_date":null,"sent_get_started_email":false,"course_id":62,"old_visit_id":null,"certified":false,"locked_message":"","latest":true,"chain_id":5436,"roadmap_ref":"63053e55-f838-4afe-9dce-f89ac6b83378|0","visit_id":"c08ca7c4-7b74-4db5-906b-3ba5b0d45f74"},"quota":0,"quota_limit":0,"type":"Student","status":"active","image_src":"https://cdn-photos.bloc.io/original/2357658/13690794_10208662758518422_299342847606852910_n.jpg?1475521351","large_image_src":"https://cdn-photos.bloc.io/large/2357658/13690794_10208662758518422_299342847606852910_n.jpg?1475521351","created_at":"2016-10-03
+        19:02:31 UTC","facebook_profile_picture_url":"http://graph.facebook.com/10209300503301643/picture?width=110\u0026height=110","github_handle":"DarylMcCullough","codecademy_handle":"designRunner00190","student":true,"time_zone":{"name":"Eastern
+        Time (US \u0026 Canada)","string":"(GMT-05:00) Eastern Time (US \u0026 Canada)","identifier":"America/New_York"}}'
+    http_version: 
+  recorded_at: Tue, 30 May 2017 20:53:42 GMT
+- request:
+    method: post
+    uri: https://www.bloc.io/api/v1/checkpoint_submissions
+    body:
+      encoding: UTF-8
+      string: '{"checkpoint_id":"<CHECKPOINT_ID>","assignment_branch":"checkpoint-8","assignment_commit_link":"https://github.com/DarylMcCullough/Kele/commit/d7f165770802bbf9b5054a68e8c57d0e4f03d45c","comment":"Kele
+        test using vcr","enrollment_id":25610}'
+    headers:
+      Content-Type:
+      - application/json
+      Authorization:
+      - eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhcGlfa2V5IjoiYTRlOWU0YjliYWZkNGMwMjgzMjM1YTc5ZjA5YzNkOTkiLCJ1c2VyX2lkIjoyMzU3NjU4LCJuYW1lIjoiRGFyeWwgTWNDdWxsb3VnaCJ9.PivbbWAQn-sGOkjSiXtVEzYab7d_FNZ91rhDHezB8J0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Date:
+      - Tue, 30 May 2017 20:53:42 GMT
+      Connection:
+      - keep-alive
+      Strict-Transport-Security:
+      - max-age=31536000
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - '"b6f725bbff59d4354f7744d98a07b6a8"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Set-Cookie:
+      - XSRF-TOKEN=AzGtctZWEpmiWVtypZxguEEwPIv8mcu5OrUR9TC%2FCdM%3D; path=/; secure
+      - _BlocAlpha_session2=enNJTTlwcHVSREpkOTlGNTBkckJ1S1dzRzdwL1ZsQlpGZyttdTA2bEFBcGp6Sm1mTVBzcEdUcTFTczZsM1ltL0ZpYWUrLzFzdmg0MDJVNnV0NlZBTHB2OW1lY3pGQ0F3YzVKZXFBTzdpMkNFbWxlWjd1bzE5ZUo3TDBRY1daQzV0K0lBYVIyNVFYRjdiRkI1NXhYTnNQMnFXRVZTUlBVeWkxWDZIODR6U1ZSK040WlV4YkdWNzMrcWZwUEhXTDFPZHBJejdjOXVEY2N4TmZPdU45MDNiR21nc09CSUlYRis0cy9iZ3JpUEdiM0hGTTEzVTV1enkvM3VTUmlUcVY1NVJWQTY1aGRnWTlkampldnhDaHhZSXY5VTh5ejlOOEZFeWFZZEhORHhNSDZFbHNQdHYrOU14eEtscXRXZEJoeE4tLUhmeEtaQkZXQ1B5SlRhVGYwYUQrSUE9PQ%3D%3D--920f311ebfa778ed0b712da4ee1d6224592f851c;
+        domain=.bloc.io; path=/; secure; HttpOnly
+      - ahoy_track=true; path=/; secure
+      - ahoy_visit=8b118fb1-a7dc-47cd-992f-65db1aa4c4f0; path=/; expires=Wed, 31 May
+        2017 00:53:42 -0000; secure
+      - ahoy_visitor=352b6992-d1b2-4438-8373-62caca540174; path=/; expires=Thu, 30
+        May 2019 20:53:42 -0000; secure
+      X-Request-Id:
+      - 0aed233f-3cae-4efd-8b42-8549322c641e
+      X-Runtime:
+      - '0.315535'
+      Vary:
+      - Accept-Encoding
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '{"id":191787,"status":"submitted","work_commit_link":null,"assignment_branch":"checkpoint-8","assignment_commit_link":"https://github.com/DarylMcCullough/Kele/commit/d7f165770802bbf9b5054a68e8c57d0e4f03d45c"}'
+    http_version: 
+  recorded_at: Tue, 30 May 2017 20:53:42 GMT
+recorded_with: VCR 3.0.3

@@ -25,7 +25,7 @@ module Messages
             "page" => page_num.to_s
         }
         
-        response = self.class.get("/message_threads", headers: headers, body: body.to_json)
+        @response = self.class.get("/message_threads", headers: headers, body: body.to_json)
         body_text = response.body
         JSON.parse(body_text)
     end
@@ -45,7 +45,7 @@ module Messages
         if token
             body["token"] = token
         end
-        response = self.class.post("/messages", headers: headers, body: body.to_json)
+        @response = self.class.post("/messages", headers: headers, body: body.to_json)
     end
 
     private

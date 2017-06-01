@@ -1,0 +1,203 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://www.bloc.io/api/v1/sessions
+    body:
+      encoding: UTF-8
+      string: '{"email":<EMAIL>,"password":<PASSWORD>}'
+    headers:
+      Content-Type:
+      - application/json
+      Accept:
+      - application/json
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Date:
+      - Tue, 30 May 2017 20:10:27 GMT
+      Connection:
+      - keep-alive
+      Strict-Transport-Security:
+      - max-age=31536000
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - '"13cd8d708a928d156619f7f7ddf013dd"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Set-Cookie:
+      - XSRF-TOKEN=8kwd9twS55f2ULA4U9MwMm54xyJwXtRN%2F%2FLrSZzCSTg%3D; path=/; secure
+      - _BlocAlpha_session2=UGtaQnVseFZybmE5MyszTzI3cWtlckw3TmE3V2FEanJ5WURVajRaMzNXTWc0c0tRZnkxN3dsUXo5N1A3VDVxN0F4NlQ1NnhUR1JKcTgxNVVSZE1EM3FnOFFwem8rbllFd0tPbFNtR0hXcVpnU2d3TExERUgwRHhQUTl2R2txYVZsNTA4YlBLUWRjUFJnQ1c1cUIrZHBGTVNENXB5aVY4V2ZzSkk0WjFWckVBRkFuYmpXK0pxUDMzREljOVRlTVIrNTc1c3pUTytXaWlmVk10RmkxSitPdz09LS1CeEdPbUxBcFN4L0VIcE9VR3NLY21nPT0%3D--ce06722b6a727d3c6f5fe8096d42889f2ddcf1c7;
+        domain=.bloc.io; path=/; secure; HttpOnly
+      - ahoy_track=true; path=/; secure
+      - ahoy_visit=006f53e0-c457-40c1-8c3e-73c401852a02; path=/; expires=Wed, 31 May
+        2017 00:10:28 -0000; secure
+      - ahoy_visitor=4b8f8782-3870-4fe7-b5f5-3daf3a09173b; path=/; expires=Thu, 30
+        May 2019 20:10:28 -0000; secure
+      X-Request-Id:
+      - fa7df1a5-7029-459b-b7e5-b1e5e9472f0c
+      X-Runtime:
+      - '0.087129'
+      Vary:
+      - Accept-Encoding
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '{"auth_token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhcGlfa2V5IjoiYTRlOWU0YjliYWZkNGMwMjgzMjM1YTc5ZjA5YzNkOTkiLCJ1c2VyX2lkIjoyMzU3NjU4LCJuYW1lIjoiRGFyeWwgTWNDdWxsb3VnaCJ9.PivbbWAQn-sGOkjSiXtVEzYab7d_FNZ91rhDHezB8J0","user":{"id":2357658,"email":"stevendaryl3016@yahoo.com","created_at":"2016-10-03T12:02:31.988-07:00","updated_at":"2017-05-30T13:10:28.016-07:00","facebook_id":"10209300503301643","first_name":"Daryl","last_name":"McCullough","role":"user","stripe_customer_id":"cus_9KiY0mY2Y4Dihg","twitter_handle":"dmccullough3016","skype_handle":null,"github_handle":"DarylMcCullough","time_zone":"Eastern
+        Time (US \u0026 Canada)","bio":"My training was in physics, but my work experience
+        has been in programming (in C++, Java, and Lisp). I am taking the Bloc Software
+        Developer track in order to bring my coding skills up to date in modern web
+        development tools and languages. Hopefully, this will lead to a new successful
+        phase in my career.\n\nI am probably about the oldest student that Bloc has
+        ever had--58. I am hoping that my training here leads to another 10 years
+        or so of satisfying work for me, before retiring.\n\nSome personal information:
+        I have four children, all adopted, of various ethnic background. They are
+        all nearing adulthood (the youngest is 18). I''ve lived in Ithaca, New York
+        for most of adult life, although I grew up in the South (in Rome, Georgia).","photo_file_name":"13690794_10208662758518422_299342847606852910_n.jpg","photo_content_type":"image/jpeg","photo_file_size":9056,"photo_updated_at":"2016-10-03T12:02:31.844-07:00","send_new_message_emails":true,"referred_by_id":null,"slug":"daryl-mccullough","os":"Windows","last_seen_at":"2017-05-30T13:10:28.024-07:00","private_profile":false,"google_plus_id":null,"linkedin":"https://www.linkedin.com/in/daryl-mccullough-99323023","quota":0,"old_first_visit_id":null,"selected_enrollment_chain_id":5436,"phone_num":"(607)
+        339-6019","title":null,"quota_limit":0,"dribbble_handle":null,"codecademy_handle":"designRunner00190","birthdate":"1958-02-16","gender":"Male","first_visit_id":null,"codewars_handle":"DarylMcCullough"}}'
+    http_version: 
+  recorded_at: Tue, 30 May 2017 20:10:28 GMT
+- request:
+    method: get
+    uri: https://www.bloc.io/api/v1/checkpoints/
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Content-Type:
+      - application/json
+      Authorization:
+      - eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhcGlfa2V5IjoiYTRlOWU0YjliYWZkNGMwMjgzMjM1YTc5ZjA5YzNkOTkiLCJ1c2VyX2lkIjoyMzU3NjU4LCJuYW1lIjoiRGFyeWwgTWNDdWxsb3VnaCJ9.PivbbWAQn-sGOkjSiXtVEzYab7d_FNZ91rhDHezB8J0
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Server:
+      - Cowboy
+      Date:
+      - Tue, 30 May 2017 20:10:28 GMT
+      Connection:
+      - keep-alive
+      Strict-Transport-Security:
+      - max-age=31536000
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Content-Type:
+      - application/json; charset=utf-8
+      Cache-Control:
+      - no-cache
+      Set-Cookie:
+      - XSRF-TOKEN=2Zb7N2xgCABeul3JlnQLhpmFTPpf0D300tqCAxrVT18%3D; path=/; secure
+      - _BlocAlpha_session2=MmhpRERpdUxyZmQrSmdDTGtHRUZWSXh0dEEyVzhod3M0dVZwZmlZVytaR0x4VzgyL0hDL3FobUt2T0ZBSUJKV0w0cGd5QmN1NmRiSXFxM3JOTklOaUlWQjFJNUxad0IzdVkwd29BSnY0Rm9yZDdOdUJqMnJ0MVNIL0tWK2EyY1BSL3A2YVgvb29aNjRONitXd1ZWUmVaTlE2YitCMzY5VmVML3YxQi9HZC9sNzh2M0cvYzI0ZkxJTzRxODZ0eTBZS2dEb2xRQVQxeFY0OGlwRTdCbXB5UnNQOCtYNFJFTWIyaXZ3VkkvRzdhQWhpd1pnWjZlaStFNWovb0xwbVBLeVNCcTZxSlR5ZTh1Vkl6QVdBSGNibWMyQjl1ZjhpOWFOellJK0NLdWFBVTJBYVBYRVRtZEREcXdXVlVPVnQzSE8tLUcyazh1T2daSGVmNVkwelVoL09Ncmc9PQ%3D%3D--1e2b3bfcc0971b5510b99cfd3a1d9800a56b189a;
+        domain=.bloc.io; path=/; secure; HttpOnly
+      - ahoy_track=true; path=/; secure
+      - ahoy_visit=90bd53b3-29fc-4379-aa9e-99a2eaee998f; path=/; expires=Wed, 31 May
+        2017 00:10:28 -0000; secure
+      - ahoy_visitor=c3843546-a837-4737-a4cd-1fdefedd0f30; path=/; expires=Thu, 30
+        May 2019 20:10:28 -0000; secure
+      X-Request-Id:
+      - 9e7bab65-81ec-4aaf-9378-f6bf260ab061
+      X-Runtime:
+      - '0.058652'
+      Vary:
+      - Accept-Encoding
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '{"message":"Resource not found"}'
+    http_version: 
+  recorded_at: Tue, 30 May 2017 20:10:28 GMT
+- request:
+    method: get
+    uri: https://www.bloc.io/api/v1/checkpoints/<CHECKPOINT_ID>
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Content-Type:
+      - application/json
+      Authorization:
+      - eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhcGlfa2V5IjoiYTRlOWU0YjliYWZkNGMwMjgzMjM1YTc5ZjA5YzNkOTkiLCJ1c2VyX2lkIjoyMzU3NjU4LCJuYW1lIjoiRGFyeWwgTWNDdWxsb3VnaCJ9.PivbbWAQn-sGOkjSiXtVEzYab7d_FNZ91rhDHezB8J0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Date:
+      - Tue, 30 May 2017 20:51:12 GMT
+      Connection:
+      - keep-alive
+      Strict-Transport-Security:
+      - max-age=31536000
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - '"43c6d2e1e1be257a8ebdf2a5182ee38f"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Set-Cookie:
+      - XSRF-TOKEN=XcuA8OCi1mTKqBe%2BHpY8HQI4CGBxzhciKUzUWaGOAsI%3D; path=/; secure
+      - _BlocAlpha_session2=NjRqbTExSy9RdWluY05TbXJmQW9ydmpVVk1RTmRWTGxZSkJpczhXakIwbXpEdFM1QlZ0bnE1eE9Jb0p3dFNZaXp3WXRqdm9rbi9vWWlWQk9kR3Q4MHUwaGk5endQTVNZeEErOXlKVDJmM21KMTJZbkNyYjdRTmZvckZrWGQxeExMOGNMSEVaU000aXRMT1hFOGE4NzdLejZvUVc5ZUdpM1o4WnkvSDIwMHY5VnRtZm96b25kdFFjN1Yyd3JKandUaytocW5ybWwyWFlNSk0wVm5ObFNXbnZWbFpxNTVmT3dLMnlxNnVpWUxwVFZQN0hlRzFibVFwZC9EZGU5SFluTnRaeFdzcjF5RzYvYi9FYzh1VzZyV3NoN3NmcVZ4UHJSNm9QQTk0KzVxRlRjVEhVWURGQ096R2pNYU1idWdjVDktLVlVOGprcHB3TGJnNDMyZjlYMC8vSUE9PQ%3D%3D--c5f9d0fcb2f5d6f5710f3ffaaf3a935bbe15b565;
+        domain=.bloc.io; path=/; secure; HttpOnly
+      - ahoy_track=true; path=/; secure
+      - ahoy_visit=48bbc01f-3aa3-4efd-a41e-c344900e3da2; path=/; expires=Wed, 31 May
+        2017 00:51:12 -0000; secure
+      - ahoy_visitor=a0036c21-0314-455d-a78c-b4371ede2c29; path=/; expires=Thu, 30
+        May 2019 20:51:12 -0000; secure
+      X-Request-Id:
+      - 6589cedd-b5df-4210-b9e7-5d5c6d7fa553
+      X-Runtime:
+      - '0.241271'
+      Vary:
+      - Accept-Encoding
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '{"id":<CHECKPOINT_ID>,"name":"Extra Credit User Stories","body":"\u003c!--
+        { ids:[<CHECKPOINT_ID>], name:''Extra Credit User Stories'', summary:''Kele
+        Client extra credit user stories'' } --\u003e\nThe goal of extra credit is
+        to push you towards self-reliance, so outside of a brief description, we don''t
+        provide additional resources. If you finish your project early, challenge
+        yourself to complete these additional user stories:\n\n| **User Story** |
+        **Difficulty Rating** |\n| :-- | :-- |\n| As a developer, I want to test `Kele`
+        using the [VCR gem](https://github.com/vcr/vcr) | 3 |\n| As a user, I want
+        to [update existing checkpoint assignments](http://docs.blocapi.apiary.io/#reference/0/checkpoint-submissions/update)
+        | 3 |","parent_id":null,"created_at":"2016-04-25T20:00:21.447-07:00","updated_at":"2016-04-25T20:59:05.493-07:00","assignment":"Optional:
+        Complete one or more of the extra credit user stories.","summary":"Kele Client
+        extra credit user stories","points":0,"project_name":"","roadmap_id":null,"active":true,"job_prep":false,"version":[0,0],"uuid":"3f714133-24a9-4920-a567-cff0019e94cb","ref":"3f714133-24a9-4920-a567-cff0019e94cb|0","retroactive_optional_date":null,"checkpoint_type":"extra_credit","quiz_id":null,"viewable_to_demo_user":false}'
+    http_version: 
+  recorded_at: Tue, 30 May 2017 20:51:12 GMT
+recorded_with: VCR 3.0.3

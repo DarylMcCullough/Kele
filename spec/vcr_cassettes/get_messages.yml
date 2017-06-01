@@ -1,0 +1,156 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://www.bloc.io/api/v1/sessions
+    body:
+      encoding: UTF-8
+      string: '{"email":<EMAIL>,"password":<PASSWORD>}'
+    headers:
+      Content-Type:
+      - application/json
+      Accept:
+      - application/json
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Date:
+      - Tue, 30 May 2017 20:10:26 GMT
+      Connection:
+      - keep-alive
+      Strict-Transport-Security:
+      - max-age=31536000
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - '"f494315a4a0d80f7ae5e97092453c35f"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Set-Cookie:
+      - XSRF-TOKEN=CSvFPlYCnjV4icgiMJI1i817eu%2BcnZEN9vz%2B6Z11%2BcI%3D; path=/; secure
+      - _BlocAlpha_session2=VTZIUXcwU0tSTm8zcHdCcVhyc3pPMDMyK2plTjFSUXQ0ekxHdHVYTTYyaXJPTTR4ZEdlaDB0YUpqZ052Yk1EYzJSUy9jYWE5dUtzRjJQYW1rTXZQbjNDdlRWWWk3cVhPbGdXUWdJeXhXZXgyWTV1TExWMmNlK2dvb2UyNGlpYlFkOHgxMGprMUZnQzR4SWpRdW1tMm5hbmRCbE5VN0JpSGkvSXg0YVJoVmJnVC9rc1BQVzdTTmw4WUZFOU5LeWdaa0F6MDRJK3RlR2lvN3lYdkJ3YXNPUT09LS1QczNyNk8xZzJ4aWlla3l6eVA3bktRPT0%3D--4b99313546ade39a6df37e52082cdd31f2d2a90f;
+        domain=.bloc.io; path=/; secure; HttpOnly
+      - ahoy_track=true; path=/; secure
+      - ahoy_visit=e198c0b5-08f1-4f5f-ae67-c4e5641f3c0e; path=/; expires=Wed, 31 May
+        2017 00:10:26 -0000; secure
+      - ahoy_visitor=d1611cfc-750e-4632-9a30-63953e4a654c; path=/; expires=Thu, 30
+        May 2019 20:10:26 -0000; secure
+      X-Request-Id:
+      - e2180c28-e360-490f-a4f9-5b8d16bb0450
+      X-Runtime:
+      - '0.131923'
+      Vary:
+      - Accept-Encoding
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '{"auth_token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhcGlfa2V5IjoiYTRlOWU0YjliYWZkNGMwMjgzMjM1YTc5ZjA5YzNkOTkiLCJ1c2VyX2lkIjoyMzU3NjU4LCJuYW1lIjoiRGFyeWwgTWNDdWxsb3VnaCJ9.PivbbWAQn-sGOkjSiXtVEzYab7d_FNZ91rhDHezB8J0","user":{"id":2357658,"email":"stevendaryl3016@yahoo.com","created_at":"2016-10-03T15:02:31.988-04:00","updated_at":"2017-05-30T16:10:26.265-04:00","facebook_id":"10209300503301643","first_name":"Daryl","last_name":"McCullough","role":"user","stripe_customer_id":"cus_9KiY0mY2Y4Dihg","twitter_handle":"dmccullough3016","skype_handle":null,"github_handle":"DarylMcCullough","time_zone":"Eastern
+        Time (US \u0026 Canada)","bio":"My training was in physics, but my work experience
+        has been in programming (in C++, Java, and Lisp). I am taking the Bloc Software
+        Developer track in order to bring my coding skills up to date in modern web
+        development tools and languages. Hopefully, this will lead to a new successful
+        phase in my career.\n\nI am probably about the oldest student that Bloc has
+        ever had--58. I am hoping that my training here leads to another 10 years
+        or so of satisfying work for me, before retiring.\n\nSome personal information:
+        I have four children, all adopted, of various ethnic background. They are
+        all nearing adulthood (the youngest is 18). I''ve lived in Ithaca, New York
+        for most of adult life, although I grew up in the South (in Rome, Georgia).","photo_file_name":"13690794_10208662758518422_299342847606852910_n.jpg","photo_content_type":"image/jpeg","photo_file_size":9056,"photo_updated_at":"2016-10-03T15:02:31.844-04:00","send_new_message_emails":true,"referred_by_id":null,"slug":"daryl-mccullough","os":"Windows","last_seen_at":"2017-05-30T16:10:26.307-04:00","private_profile":false,"google_plus_id":null,"linkedin":"https://www.linkedin.com/in/daryl-mccullough-99323023","quota":0,"old_first_visit_id":null,"selected_enrollment_chain_id":5436,"phone_num":"(607)
+        339-6019","title":null,"quota_limit":0,"dribbble_handle":null,"codecademy_handle":"designRunner00190","birthdate":"1958-02-16","gender":"Male","first_visit_id":null,"codewars_handle":"DarylMcCullough"}}'
+    http_version: 
+  recorded_at: Tue, 30 May 2017 20:10:26 GMT
+- request:
+    method: get
+    uri: https://www.bloc.io/api/v1/message_threads
+    body:
+      encoding: UTF-8
+      string: '{"page":"1"}'
+    headers:
+      Content-Type:
+      - application/json
+      Authorization:
+      - eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhcGlfa2V5IjoiYTRlOWU0YjliYWZkNGMwMjgzMjM1YTc5ZjA5YzNkOTkiLCJ1c2VyX2lkIjoyMzU3NjU4LCJuYW1lIjoiRGFyeWwgTWNDdWxsb3VnaCJ9.PivbbWAQn-sGOkjSiXtVEzYab7d_FNZ91rhDHezB8J0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Date:
+      - Tue, 30 May 2017 20:10:27 GMT
+      Connection:
+      - keep-alive
+      Strict-Transport-Security:
+      - max-age=31536000
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - '"4b3f865e9ef90f12aab31e4e3e637c13"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Set-Cookie:
+      - XSRF-TOKEN=B89p43l0MgJ8fKK5LXHZEbJZBdEIgSo0LR%2FqV4L9p6Q%3D; path=/; secure
+      - _BlocAlpha_session2=SGxxS3JuODl5OFpXSlQvUHBkcHd4a1JkZkV3bmFNeVAwVVVVSCsxMXBxYnhzRC9EaWU3WE5sSDBIQy9vaTBlN0Zuei9hNnNEQ0F1NFphemgzdVNYaHVDWkZsOHpOZytVUnk5dHFhb2tSdW9DS2VoOXBubEhzTWk4bTNOVklqb1dVbEpGWFJlNW51dC9yUGQvejd1eXhDNXd5Y2s0b3ZYYkFrT2lETWJOci85RXJRL3JTOEd1NUxRZ1gxc2JJd01Hd1dwa29tMmljellvREtjMWtvYUk3U1ZyZFYzcW9VaXNrajlWZEFYTERNUGtxWUM4QkNHOERHQTZMeWxDZWdBdHJ2VDVmcVFlYjdRaEp3T2p3N3hyRWtYSzJUWVdwais4SHhWREh4SW00MUF0TUVlMlNvZ0p1dFUzOE1NdXVoWWMtLUxxOVlxRWcyeHpoSmJEdDZOSStzZEE9PQ%3D%3D--67fcc4e15341c0176acc0b0337c3d86c07589b8c;
+        domain=.bloc.io; path=/; secure; HttpOnly
+      - ahoy_track=true; path=/; secure
+      - ahoy_visit=52bb3562-5e34-4bb5-8bb3-3ca7048289ed; path=/; expires=Wed, 31 May
+        2017 00:10:26 -0000; secure
+      - ahoy_visitor=1f9b1605-6fe5-4a2e-aa93-db4fc3994371; path=/; expires=Thu, 30
+        May 2019 20:10:26 -0000; secure
+      X-Request-Id:
+      - 7adedaaa-dc8a-4691-9b85-b7fad35ce008
+      X-Runtime:
+      - '0.565042'
+      Vary:
+      - Accept-Encoding
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '{"items":[{"id":308950,"token":"c0dc1fb0-e874-45ff-9a6e-19465bbbd99d","subject":"Software
+        Project: Backend Web Development Kele API Client - Extra Credit User Stories
+        discussion","updated_at":"2017-05-30T18:53:09.082Z","unread":false,"user_image":"https://cdn-photos.bloc.io/square/623967/unnamed.jpg?1422145878","preview":"Daryl,
+        \n\nYou are correct. ENV is automatically ...","first_name":"Brittany","last_name":"Martin","page":"1"},{"id":309756,"token":"e10f4c1a-6738-4592-b46b-fe85fc0ace7a","subject":"Appointment
+        Time This Week","updated_at":"2017-05-29T22:00:34.043Z","unread":true,"user_image":"https://cdn-photos.bloc.io/square/623967/unnamed.jpg?1422145878","preview":"Hi
+        Daryl, \n\nI made it back in time for our appo...","first_name":"Brittany","last_name":"Martin","page":"1"},{"id":307604,"token":"4c67cab4-1830-4835-90c9-0a5ab92a21c1","subject":"Software
+        Module 4: Specialization Introduction 1 - Progress Assessment discussion","updated_at":"2017-05-29T02:14:37.815Z","unread":true,"user_image":"https://cdn-photos.bloc.io/square/623967/unnamed.jpg?1422145878","preview":"I''m
+        still really proud of you. We will discuss ...","first_name":"Brittany","last_name":"Martin","page":"1"},{"id":309787,"token":"b37ddc5d-c9c4-4cbd-98aa-fbc48d8da889","subject":"Assessment","updated_at":"2017-05-28T23:31:59.974Z","unread":false,"user_image":"https://cdn-photos.bloc.io/square/2366806/me2.jpg?1481607731","preview":"\"Congratulations
+        on passing your phase 1 Assess...","first_name":"Allen","last_name":"Hunn","page":"1"},{"id":308880,"token":"a7960c4e-ae63-4591-8802-9d63e8b57932","subject":"Software
+        Project: Backend Web Development Kele API Client 7 - Checkpoint Submission
+        discussion","updated_at":"2017-05-25T21:03:51.502Z","unread":false,"user_image":"https://cdn-photos.bloc.io/square/623967/unnamed.jpg?1422145878","preview":"(Copy
+        of what I put in my pull request message)...","first_name":"Brittany","last_name":"Martin","page":"1"},{"id":308552,"token":"e6d924cf-d113-45cb-8480-12f7163c3224","subject":"Software
+        Project: Backend Web Development Kele API Client 6 - Messaging discussion","updated_at":"2017-05-25T19:38:25.592Z","unread":false,"user_image":"https://cdn-photos.bloc.io/square/623967/unnamed.jpg?1422145878","preview":"Yes,
+        but that is a separate API call. Good ques...","first_name":"Brittany","last_name":"Martin","page":"1"},{"id":308826,"token":"d0d5f8d2-695b-4b85-9fc3-d5d6399fd7bc","subject":"Testing
+        messaging","updated_at":"2017-05-25T19:02:19.378Z","unread":false,"user_image":"https://cdn-photos.bloc.io/square/623967/unnamed.jpg?1422145878","preview":"That''s
+        exciting.","first_name":"Brittany","last_name":"Martin","page":"1"},{"id":308489,"token":"c20de7cd-22c3-4c5a-88a9-c902cb63192a","subject":"Software
+        Project: Backend Web Development Kele API Client 5 - Roadmaps and Checkpoints
+        discussion","updated_at":"2017-05-24T22:27:58.943Z","unread":false,"user_image":"https://cdn-photos.bloc.io/square/623967/unnamed.jpg?1422145878","preview":"require_relative
+        is exactly what you needed. Ni...","first_name":"Brittany","last_name":"Martin","page":"1"},{"id":307411,"token":"63f3e8a0-1990-4d46-9b97-439b20829e40","subject":"Software
+        Project: Backend Web Development Kele API Client 4 - Mentor Availability discussion","updated_at":"2017-05-24T20:20:31.938Z","unread":false,"user_image":"https://cdn-photos.bloc.io/square/623967/unnamed.jpg?1422145878","preview":"I
+        found that one cryptic too! It means drop date.","first_name":"Brittany","last_name":"Martin","page":"1"},{"id":307568,"token":"89405343-fd85-44b2-abb1-a35827cf2c33","subject":"Software
+        Project: Backend Web Development Kele API Client 3 - Retrieve Users discussion","updated_at":"2017-05-24T19:16:42.995Z","unread":false,"user_image":"https://cdn-photos.bloc.io/square/623967/unnamed.jpg?1422145878","preview":"Daryl,
+        \n\nI wouldn''t rely on parsed_response (it...","first_name":"Brittany","last_name":"Martin","page":"1"}],"count":100}'
+    http_version: 
+  recorded_at: Tue, 30 May 2017 20:10:27 GMT
+recorded_with: VCR 3.0.3
